@@ -14,15 +14,21 @@ function App() {
         <h1>Welcome to Tensorboy2s home page</h1>
         <h3>Choose a direction:</h3>
         <div className='buttonWrapper'>
+          <div>
             <button type='button' className='linkButton' onClick={() => handleClick('https://tensorboy2.github.io')}>
                 {'Normal CV'}
             </button>
+          </div>
+          <div>
             <button type='button' className='linkButton' onClick={() => handleClick('https://tensorboy2.github.io/home')}>
                 {'Special CV'}
             </button>
+          </div>
+          <div>
             <button type='button' className='linkButton' onClick={() => handleClick('https://youtu.be/xvFZjo5PgG0?si=CvQgFjtUV8h9ZxtG')}>
                 {'Prank'}
             </button>
+          </div>
         </div>
       </header>
     </div>

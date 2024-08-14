@@ -27,6 +27,14 @@
 .buttonWrapper {
   display: flex;
   gap: 30px;
+  flex-direction: row;
+}
+@media only screen  and (max-width: 550px) {
+  .buttonWrapper {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
 }
 
 .linkButton {
