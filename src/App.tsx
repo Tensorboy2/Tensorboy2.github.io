@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to Tensorboy2s home page</h1>
+        <h1 className='headderText' onClick={() => handleClick('https://youtu.be/jVhlJNJopOQ?si=ZRDxwciBXxjpvmsH')}>Welcome to Tensorboy2s home page</h1>
         <h3>Choose a direction:</h3>
         <div className='buttonWrapper'>
           <div>
@@ -22,6 +22,11 @@ function App() {
           <div>
             <button type='button' className='linkButton' onClick={() => handleClick('https://tensorboy2.github.io/home')}>
                 {'Special CV'}
+            </button>
+          </div>
+          <div>
+            <button type='button' className='linkButton' onClick={() => handleClick('https://tensorboy2.github.io/dino-game')}>
+                {'Game'}
             </button>
           </div>
           <div>

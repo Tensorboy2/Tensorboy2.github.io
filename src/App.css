@@ -24,6 +24,10 @@
   color: white;
 }
 
+.headderText {
+  font-family: Papyrus
+}
+
 .buttonWrapper {
   display: flex;
   gap: 30px;
