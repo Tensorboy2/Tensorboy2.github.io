@@ -30,6 +30,11 @@ function App() {
             </button>
           </div>
           <div>
+            <button type='button' className='linkButton' onClick={() => handleClick('https://tensorboy2.github.io/number_predictor')}>
+                {'Number Predictor'}
+            </button>
+          </div>
+          <div>
             <button type='button' className='linkButton' onClick={() => handleClick('https://youtu.be/xvFZjo5PgG0?si=CvQgFjtUV8h9ZxtG')}>
                 {'Prank'}
             </button>
