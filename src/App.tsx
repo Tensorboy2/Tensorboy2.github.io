@@ -15,7 +15,7 @@ function App() {
         <h3>Choose a direction:</h3>
         <div className='buttonWrapper'>
           <div>
-            <button type='button' className='linkButton' onClick={() => handleClick('https://tensorboy2.github.io')}>
+            <button type='button' className='linkButton' onClick={() => handleClick('https://tensorboy2.github.io/home2')}>
                 {'Normal CV'}
             </button>
           </div>
