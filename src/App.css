@@ -57,6 +57,9 @@
   border-radius: 44px;
   cursor: pointer;
 }
+.linkButton:hover {
+  background-color: rgba(0, 255, 255, 0.753);
+}
 
 .App-link {
   color: #61dafb;
@@ -69,4 +72,94 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.specialcv {
+  width: 150px;
+  height: 60px;
+  padding: 0em 0em;
+  border: none;
+  font-size: 24px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), #111);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 44px;
+  border: 2px solid #61dafb;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  overflow: hidden; /* To ensure the inner effect stays within the button */
+  animation: vibrate 0.2s infinite; 
+}
+
+.specialcv:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(8px); /* Increased blur for a softer glow */
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 1.5s linear infinite, bass-vibrate-inner 0.2s infinite;; /* Slowed down animation for a smoother effect */
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0px, 0px); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-2px, -2px); }
+  80% { transform: translate(2px, 2px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+
+
+@keyframes bass-vibrate-inner {
+  0% { filter: blur(8px); }
+  50% { filter: blur(14px); } /* Blur grows as the vibration intensifies */
+  100% { filter: blur(8px); }
+}
+
+.specialcv:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), #111); /* Inner fading effect */
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 10px;
+  transition: background 0.5s ease;
 }

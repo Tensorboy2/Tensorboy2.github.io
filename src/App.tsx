@@ -20,7 +20,7 @@ function App() {
             </button>
           </div>
           <div>
-            <button type='button' className='linkButton' onClick={() => handleClick('https://tensorboy2.github.io/home')}>
+            <button type='button' className='specialcv' onClick={() => handleClick('https://tensorboy2.github.io/home')}>
                 {'Special CV'}
             </button>
           </div>
